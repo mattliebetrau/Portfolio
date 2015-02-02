@@ -1,3 +1,11 @@
 .clear-fix {
 	clear: both;
 }
+
+.float-clear {
+	&:before, &:after {
+		content: ""; 
+		display: table;
+		clear: both;
+	}
+}

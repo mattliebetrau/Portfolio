@@ -66,35 +66,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 1, ../sass/components/_about.scss */
 #about {
   background-image: url("../img/background.png");
+  margin-bottom: 200px;
 }
-/* line 3, ../sass/components/_about.scss */
+/* line 4, ../sass/components/_about.scss */
 #about h2 {
   font-size: 2.5em;
   background-color: #c0392b;
-  margin-bottom: 50px;
+  margin-bottom: 75px;
   padding: 12px;
   text-align: center;
   width: 100px;
   color: #fff;
 }
-/* line 12, ../sass/components/_about.scss */
+/* line 13, ../sass/components/_about.scss */
 #about h3 {
   color: #34495e;
   text-align: center;
   font-size: 2em;
   margin-bottom: 20px;
 }
-/* line 18, ../sass/components/_about.scss */
+/* line 19, ../sass/components/_about.scss */
 #about p {
   margin: 0 auto;
-  width: 85%;
+  width: auto;
   margin-bottom: 10px;
   text-align: justify;
 }
+@media (min-width: 800px) {
+  /* line 19, ../sass/components/_about.scss */
+  #about p {
+    width: 85%;
+  }
+}
 
-/* line 26, ../sass/components/_about.scss */
+/* line 30, ../sass/components/_about.scss */
 .technical-stuff {
-  border-right: 3px solid #c0392b;
+  margin-bottom: 20px;
+  border-right: none;
+}
+@media (min-width: 800px) {
+  /* line 30, ../sass/components/_about.scss */
+  .technical-stuff {
+    border-right: 3px solid #c0392b;
+  }
 }
 
 /* line 1, ../sass/components/_base.scss */
@@ -384,6 +398,13 @@ nav li a {
   clear: both;
 }
 
+/* line 6, ../sass/components/_utility.scss */
+.float-clear:before, .float-clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* line 1, ../sass/components/_work.scss */
 #work {
   background-color: #c0392b;
@@ -456,4 +477,155 @@ nav li a {
   text-align: left;
   margin-bottom: 10px;
   opacity: .75;
+}
+
+/* line 1, ../sass/components/_contact.scss */
+#contact {
+  background: #c0392b;
+  padding-bottom: 120px;
+}
+/* line 3, ../sass/components/_contact.scss */
+#contact h2 {
+  font-size: 2.5em;
+  background-image: url("../img/background.png");
+  margin-bottom: 75px;
+  padding: 12px;
+  text-align: center;
+  width: 135px;
+}
+
+/* line 1, ../sass/components/_forms.scss */
+input {
+  background-color: #d9d9d9;
+  border: none;
+  height: 40px;
+  font-size: 1.2em;
+  color: #34495e;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* line 11, ../sass/components/_forms.scss */
+textarea {
+  background-color: #d9d9d9;
+  border: none;
+  height: 150px;
+  font-size: 1.2em;
+  color: #34495e;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* line 21, ../sass/components/_forms.scss */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+/* line 30, ../sass/components/_forms.scss */
+.contact-form {
+  margin: 0 auto;
+  width: 655px;
+}
+@media (max-width: 850px) {
+  /* line 30, ../sass/components/_forms.scss */
+  .contact-form {
+    width: 90%;
+    margin-left: 20px;
+  }
+}
+
+/* line 39, ../sass/components/_forms.scss */
+.form-name {
+  display: inline-block;
+}
+/* line 41, ../sass/components/_forms.scss */
+.form-name input {
+  width: 300px;
+  outline-color: #34495e;
+  margin-right: 40px;
+}
+@media (max-width: 750px) {
+  /* line 39, ../sass/components/_forms.scss */
+  .form-name {
+    display: block;
+  }
+}
+
+/* line 50, ../sass/components/_forms.scss */
+.form-email {
+  display: inline-block;
+}
+/* line 52, ../sass/components/_forms.scss */
+.form-email input {
+  width: 300px;
+  outline-color: #34495e;
+}
+@media (max-width: 750px) {
+  /* line 50, ../sass/components/_forms.scss */
+  .form-email {
+    display: block;
+  }
+}
+
+/* line 61, ../sass/components/_forms.scss */
+.form-subject input {
+  width: 645px;
+  outline-color: #34495e;
+}
+@media (max-width: 750px) {
+  /* line 61, ../sass/components/_forms.scss */
+  .form-subject input {
+    width: 300px;
+  }
+}
+
+/* line 70, ../sass/components/_forms.scss */
+.form-comments textarea {
+  width: 645px;
+  outline-color: #34495e;
+}
+@media (max-width: 750px) {
+  /* line 70, ../sass/components/_forms.scss */
+  .form-comments textarea {
+    width: 300px;
+  }
+}
+
+/* line 78, ../sass/components/_forms.scss */
+.submit {
+  color: #fff;
+  background-color: #34495e;
+  font-weight: 600;
+  font-size: 1.25em;
+  cursor: pointer;
+  width: 645px;
+  height: 50px;
+}
+/* line 81, ../sass/components/_forms.scss */
+.submit:hover, .submit:focus {
+  background-color: #19232d;
+}
+@media (max-width: 750px) {
+  /* line 78, ../sass/components/_forms.scss */
+  .submit {
+    width: 300px;
+  }
+}
+
+/* line 93, ../sass/components/_forms.scss */
+.hide {
+  display: none;
+}
+
+/* line 1, ../sass/components/_footer.scss */
+footer {
+  height: 75px;
+  background-color: #34495e;
 }
