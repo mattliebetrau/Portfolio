@@ -1,0 +1,459 @@
+/* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/components/_about.scss */
+#about {
+  background-image: url("../img/background.png");
+}
+/* line 3, ../sass/components/_about.scss */
+#about h2 {
+  font-size: 2.5em;
+  background-color: #c0392b;
+  margin-bottom: 50px;
+  padding: 12px;
+  text-align: center;
+  width: 100px;
+  color: #fff;
+}
+/* line 12, ../sass/components/_about.scss */
+#about h3 {
+  color: #34495e;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+/* line 18, ../sass/components/_about.scss */
+#about p {
+  margin: 0 auto;
+  width: 85%;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* line 26, ../sass/components/_about.scss */
+.technical-stuff {
+  border-right: 3px solid #c0392b;
+}
+
+/* line 1, ../sass/components/_base.scss */
+body {
+  background-image: url("../img/background.png");
+}
+
+/* line 5, ../sass/components/_base.scss */
+p, a, li {
+  font-family: "Vollkorn", serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* line 11, ../sass/components/_base.scss */
+a {
+  color: #34495e;
+  text-decoration: none;
+}
+/* line 14, ../sass/components/_base.scss */
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* line 19, ../sass/components/_base.scss */
+h1, h2, h3 {
+  font-family: "Unica One", cursive;
+  text-transform: uppercase;
+  color: #c0392b;
+}
+
+/* line 25, ../sass/components/_base.scss */
+h1 {
+  font-size: 3em;
+}
+
+/* line 29, ../sass/components/_base.scss */
+h2 {
+  font-size: 1.25em;
+}
+
+/* line 1, ../sass/components/_grid.scss */
+.container-max {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/components/_grid.scss */
+.container-half {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  float: left;
+}
+@media (min-width: 800px) {
+  /* line 10, ../sass/components/_grid.scss */
+  .container-half {
+    width: 50%;
+  }
+}
+
+/* line 3, ../sass/components/_hero.scss */
+.top-line {
+  position: absolute;
+  height: 10px;
+  background-color: #c0392b;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 12, ../sass/components/_hero.scss */
+.hero {
+  background-image: url("../img/me.png");
+  padding: 60px 0 330px;
+  background-size: 600px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+@media (min-width: 800px) {
+  /* line 12, ../sass/components/_hero.scss */
+  .hero {
+    background-size: 700px;
+  }
+}
+/* line 21, ../sass/components/_hero.scss */
+.hero img {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  border-radius: 50%;
+}
+/* line 27, ../sass/components/_hero.scss */
+.hero h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* line 31, ../sass/components/_hero.scss */
+.hero p, .hero a {
+  display: inline;
+  font-size: 1.25em;
+}
+
+/* line 37, ../sass/components/_hero.scss */
+.bio {
+  margin: 40px auto;
+  width: auto;
+  max-width: 700px;
+  text-align: justify;
+}
+
+/* line 44, ../sass/components/_hero.scss */
+.view-work {
+  margin-top: 20px;
+}
+
+/* line 48, ../sass/components/_hero.scss */
+.background-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  background: linear-gradient(#c0392b, #34495e);
+  z-index: 1;
+}
+
+/* line 58, ../sass/components/_hero.scss */
+.background-cover-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* line 1, ../sass/components/_navigation.scss */
+nav {
+  position: relative;
+  z-index: 100;
+}
+/* line 5, ../sass/components/_navigation.scss */
+nav li a {
+  color: #fff;
+  z-index: 100;
+}
+
+/* line 12, ../sass/components/_navigation.scss */
+.hamburger {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  z-index: 2;
+}
+/* line 18, ../sass/components/_navigation.scss */
+.hamburger div {
+  background-color: #34495e;
+  width: 25px;
+  height: 4px;
+  margin-bottom: 4px;
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+/* line 32, ../sass/components/_navigation.scss */
+.hamburger div .first-container {
+  width: 75px;
+}
+/* line 35, ../sass/components/_navigation.scss */
+.hamburger div .first {
+  float: right;
+  overflow: hidden;
+  position: relative;
+  z-index: 99;
+}
+/* line 42, ../sass/components/_navigation.scss */
+.hamburger .second {
+  background-color: #c0392b;
+  z-index: 100;
+  position: relative;
+}
+/* line 47, ../sass/components/_navigation.scss */
+.hamburger .third {
+  background-color: #c0392b;
+  z-index: 100;
+  position: relative;
+}
+/* line 52, ../sass/components/_navigation.scss */
+.hamburger ul {
+  padding: 10px;
+  color: white;
+}
+
+/* line 58, ../sass/components/_navigation.scss */
+.first.open {
+  -webkit-animation: grow 0.75s 0.25s linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+  /* Chrome, Safari, Opera */
+  animation-timing-function: ease-out;
+}
+
+/* line 65, ../sass/components/_navigation.scss */
+.second.open {
+  -webkit-animation: rotate 0.1s 0.7s linear;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/* line 70, ../sass/components/_navigation.scss */
+.third.open {
+  -webkit-animation: rotate-cc 0.1s 0.7s linear;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes grow {
+  /* line 76, ../sass/components/_navigation.scss */
+  0% {
+    width: 25px;
+  }
+
+  /* line 77, ../sass/components/_navigation.scss */
+  30% {
+    width: 110px;
+  }
+
+  /* line 78, ../sass/components/_navigation.scss */
+  60% {
+    height: 4px;
+  }
+
+  /* line 79, ../sass/components/_navigation.scss */
+  80% {
+    height: 110px;
+  }
+
+  /* line 80, ../sass/components/_navigation.scss */
+  90% {
+    height: 100px;
+  }
+
+  /* line 81, ../sass/components/_navigation.scss */
+  100% {
+    width: 110px;
+    height: 105px;
+  }
+}
+
+@-webkit-keyframes rotate {
+  /* line 85, ../sass/components/_navigation.scss */
+  from {
+    transform: rotate(0deg);
+  }
+
+  /* line 86, ../sass/components/_navigation.scss */
+  to {
+    transform: rotate(45deg);
+    margin-top: 10px;
+    margin-bottom: -4px;
+    width: 20px;
+  }
+}
+
+@-webkit-keyframes rotate-cc {
+  /* line 90, ../sass/components/_navigation.scss */
+  from {
+    transform: rotate(0deg);
+  }
+
+  /* line 91, ../sass/components/_navigation.scss */
+  to {
+    transform: rotate(-45deg);
+    margin-bottom: -4px;
+    width: 20px;
+  }
+}
+
+/* line 1, ../sass/components/_utility.scss */
+.clear-fix {
+  clear: both;
+}
+
+/* line 1, ../sass/components/_work.scss */
+#work {
+  background-color: #c0392b;
+  padding-bottom: 50px;
+}
+/* line 4, ../sass/components/_work.scss */
+#work h2 {
+  font-size: 2.5em;
+  background-image: url("../img/background.png");
+  margin-bottom: 50px;
+  padding: 12px;
+  text-align: center;
+  width: 85px;
+}
+
+/* line 14, ../sass/components/_work.scss */
+.work-wrapper .work-wrapper--image, .work-wrapper .work-wrapper--description {
+  float: none;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media (min-width: 800px) {
+  /* line 14, ../sass/components/_work.scss */
+  .work-wrapper .work-wrapper--image, .work-wrapper .work-wrapper--description {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+  }
+}
+
+/* line 26, ../sass/components/_work.scss */
+.work-wrapper {
+  background-color: #d9d9d9;
+  margin-bottom: 50px;
+  padding: 40px;
+}
+/* line 32, ../sass/components/_work.scss */
+.work-wrapper .work-wrapper--image img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* line 48, ../sass/components/_work.scss */
+.one, .three {
+  border-left: 5px solid #34495e;
+}
+/* line 50, ../sass/components/_work.scss */
+.one .work-wrapper--image, .three .work-wrapper--image {
+  float: right;
+}
+
+/* line 54, ../sass/components/_work.scss */
+.two, .four {
+  border-right: 5px solid #34495e;
+}
+
+/* line 59, ../sass/components/_work.scss */
+.work-wrapper--description h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* line 65, ../sass/components/_work.scss */
+.project-type {
+  background-color: #34495e;
+  padding: 5px 10px;
+  color: #fff;
+  width: 110px;
+  text-align: left;
+  margin-bottom: 10px;
+  opacity: .75;
+}

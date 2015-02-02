@@ -1,0 +1,92 @@
+nav {
+	position: relative;
+	z-index: 100;
+  	li {
+  		a {
+  			color: #fff;
+  			z-index: 100;
+  		}
+  	}
+}
+
+.hamburger {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	cursor: pointer;
+	z-index: 2;
+	div {
+		background-color: $blue;
+		width: 25px;
+		height: 4px;
+		margin-bottom: 4px;
+		zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+		// &:before,
+		// &:after {
+		// 	content: "";
+		// 	display: table;
+		// }
+		// &:after {
+		// 	clear: both;
+		// }
+		.first-container {
+			width: 75px;
+		}
+		.first {
+			float: right;
+			overflow: hidden;
+			position: relative;
+			z-index: 99;
+		}
+	}
+	.second {
+		background-color: $red;
+		z-index: 100;
+		position: relative;
+	}
+	.third {
+		background-color: $red;
+		z-index: 100;
+		position: relative;
+	}
+	ul {
+		padding: 10px;
+		color: white;
+	}
+}
+
+.first.open {
+	-webkit-animation: grow 0.75s 0.25s linear; 
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+    animation-timing-function: ease-out;
+}
+
+.second.open {
+	-webkit-animation: rotate 0.1s 0.7s linear; 
+	-webkit-animation-fill-mode: forwards;
+}
+
+.third.open {
+	-webkit-animation: rotate-cc 0.1s 0.7s linear; 
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes grow {
+	0%   { width: 25px;}
+	30%  { width: 110px; }
+	60%  { height: 4px;}
+	80%  { height: 110px;}
+	90%  { height: 100px;}
+	100% { width: 110px; height: 105px; }
+}
+
+@-webkit-keyframes rotate { 
+	from {transform: rotate(0deg);  }
+	to   {transform: rotate(45deg); margin-top: 10px; margin-bottom: -4px; width: 20px;}
+}
+
+@-webkit-keyframes rotate-cc { 
+	from {transform: rotate(0deg);  }
+	to   {transform: rotate(-45deg); margin-bottom: -4px; width: 20px;}
+}
