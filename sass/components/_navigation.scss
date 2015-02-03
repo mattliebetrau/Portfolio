@@ -40,12 +40,12 @@ nav {
 		}
 	}
 	.second {
-		background-color: $red;
+		background-color: $blue;
 		z-index: 100;
 		position: relative;
 	}
 	.third {
-		background-color: $red;
+		background-color: $blue;
 		z-index: 100;
 		position: relative;
 	}
@@ -83,10 +83,10 @@ nav {
 
 @-webkit-keyframes rotate { 
 	from {transform: rotate(0deg);  }
-	to   {transform: rotate(45deg); margin-top: 10px; margin-bottom: -4px; width: 20px;}
+	to   {transform: rotate(45deg); margin-top: 10px; margin-bottom: -4px; width: 20px; background-color: $red;}
 }
 
 @-webkit-keyframes rotate-cc { 
 	from {transform: rotate(0deg);  }
-	to   {transform: rotate(-45deg); margin-bottom: -4px; width: 20px;}
+	to   {transform: rotate(-45deg); margin-bottom: -4px; width: 20px; background-color: $red;}
 }

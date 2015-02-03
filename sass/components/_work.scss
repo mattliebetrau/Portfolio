@@ -1,6 +1,9 @@
 #work {
 	background-color: $red;
 	padding-bottom: 50px;
+	p {
+		font-size: 1.1em;
+	}
 	h2 {
 		font-size: 2.5em;
 		background-image: url('../img/background.png');
@@ -31,13 +34,7 @@
 		@extend %work-wrapper-styles;
 		img {
 			width: 100%;
-			margin-bottom: 20px;
-			// border-top: 12px solid $blue;
-			// border-right: 7px solid $blue;
-			// border-left: 7px solid $blue;
-			// border-bottom: 7px solid $blue;
-			// border-radius: 5px;
-			// display: block;
+			margin-bottom: 20px;	
 		}
 	}
 	.work-wrapper--description {
@@ -62,12 +59,13 @@
 	}
 }
 
-.project-type {
-	background-color: $blue;
-	padding: 5px 10px;
-	color: #fff;
-	width: 110px;
-	text-align: left;
-	margin-bottom: 10px;
-	opacity: .75;
+.project-tags {
+	margin-bottom: 5px;
+	li {
+		color: #fff;
+		display: inline-block;
+		background-color: lighten($blue, 10%);
+		padding: 5px 10px;
+		margin-bottom: 5px;
+	}
 }
